@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="digital(), analog()">
+
+
+    <div class="ears">
+        <div class="ear"><div class="top"></div></div>
+        <div class="e2"><div class="top2"></div></div>
+    </div>
+    <div class="poles">
+        <div class="pole"></div>
+        <div class="pole2"></div>
+    </div>
+    <div class="container">
+
+        <div class="analog">
+            <div class="hands" id="second" style="--h: 150px;--color: black; z-index: 3;"><i></i></div>
+            <div class="hands" id="circle" style="--h: 1px;--color: black; z-index: 4;width: 1px;border: black solid 5px;border-radius: 100%;position: absolute;"><i></i></div>
+            <div class="hands" id="minute" style="--h: 125px;--color: rgb(28, 100, 255); z-index: 2"><i></i></div>
+            <div class="hands" id="hour" style="--h: 85px;--color: red; z-index: 1"><i></i></div>
+            <span style="--i: 1"><b>|</b></span>
+            <span style="--i: 2"><b>|</b></span>
+            <span style="--i: 3"><b class="rotate">3</b></span>
+            <span style="--i: 4"><b>|</b></span>
+            <span style="--i: 5"><b>|</b></span>
+            <span style="--i: 6"><b class="rotate">6</b></span>
+            <span style="--i: 7"><b>|</b></span>
+            <span style="--i: 8"><b>|</b></span>
+            <span style="--i: 9"><b class="rotate">9</b></span>
+            <span style="--i: 10"><b>|</b></span>
+            <span style="--i: 11"><b>|</b></span>
+            <span style="--i: 12"><b class="rotate">12</b></span>
+        </div>
+
+
+        <div class="digital"></div>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
