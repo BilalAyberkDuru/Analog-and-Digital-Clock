@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--fonts.google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--fonts.google -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="analog()">
+    <div class="center">
+        <div class="analog">
+            <div class="hands" id="circle" style="--h: 1px;--color: black; z-index: 4;width: 6px;height:6px;border:black solid 3px;border-radius: 100%;position: absolute;background-color: black;"><i></i></div>
+            <div class="hands" id="second" style="--h: 170px;--color: red; z-index: 3;--w: 2px"><i></i></div>
+            <div class="hands" id="minute" style="--h: 150px;--color: black; z-index: 2;--w: 5px"><i></i></div>
+            <div class="hands" id="hour" style="--h: 115px;--color: black; z-index: 1;--w: 5px"><i></i></div>
+            <span style="--i: 1">|</span>
+            <span style="--i: 2">|</span>
+            <span style="--i: 3">|</span>
+            <span style="--i: 4">|</span>
+            <span style="--i: 5; font-size: 1.5rem; font-weight: bold;">|<b>1</b></span>
+            <span style="--i: 6">|</span>
+            <span style="--i: 7">|</span>
+            <span style="--i: 8">|</span>
+            <span style="--i: 9">|</span>
+            <span style="--i: 10; font-size: 1.5rem; font-weight: bold;">|<b>2</b></span>
+            <span style="--i: 11">|</span>
+            <span style="--i: 12">|</span>
+            <span style="--i: 13">|</span>
+            <span style="--i: 14">|</span>
+            <span style="--i: 15; font-size: 1.5rem; font-weight: bold;">|<b>3</b></span>
+            <span style="--i: 16">|</span>
+            <span style="--i: 17">|</span>
+            <span style="--i: 18">|</span>
+            <span style="--i: 19">|</span>
+            <span style="--i: 20; font-size: 1.5rem; font-weight: bold;">|<b>4</b></span>
+            <span style="--i: 21">|</span>
+            <span style="--i: 22">|</span>
+            <span style="--i: 23">|</span>
+            <span style="--i: 24">|</span>
+            <span style="--i: 25; font-size: 1.5rem; font-weight: bold;">|<b>5</b></span>
+            <span style="--i: 26">|</span>
+            <span style="--i: 27">|</span>
+            <span style="--i: 28">|</span>
+            <span style="--i: 29">|</span>
+            <span style="--i: 30; font-size: 1.5rem; font-weight: bold;">|<b>6</b></span>
+            <span style="--i: 31">|</span>
+            <span style="--i: 32">|</span>
+            <span style="--i: 33">|</span>
+            <span style="--i: 34">|</span>
+            <span style="--i: 35; font-size: 1.5rem; font-weight: bold;">|<b>7</b></span>
+            <span style="--i: 36">|</span>
+            <span style="--i: 37">|</span>
+            <span style="--i: 38">|</span>
+            <span style="--i: 39">|</span>
+            <span style="--i: 40; font-size: 1.5rem; font-weight: bold;">|<b>8</b></span>
+            <span style="--i: 41">|</span>
+            <span style="--i: 42">|</span>
+            <span style="--i: 43">|</span>
+            <span style="--i: 44">|</span>
+            <span style="--i: 45; font-size: 1.5rem; font-weight: bold;">|<b>9</b></span>
+            <span style="--i: 46">|</span>
+            <span style="--i: 47">|</span>
+            <span style="--i: 48">|</span>
+            <span style="--i: 49">|</span>
+            <span style="--i: 50; font-size: 1.5rem; font-weight: bold;">|<b>10</b></span>
+            <span style="--i: 51">|</span>
+            <span style="--i: 52">|</span>
+            <span style="--i: 53">|</span>
+            <span style="--i: 54">|</span>
+            <span style="--i: 55; font-size: 1.5rem; font-weight: bold;">|<b>11</b></span>
+            <span style="--i: 56">|</span>
+            <span style="--i: 57">|</span>
+            <span style="--i: 58">|</span>
+            <span style="--i: 59">|</span>
+            <span style="--i: 60; font-size: 1.5rem; font-weight: bold;">|<b>12</b></span>
+        </div>
+
+
+        <div class="digital">
+            <div class="top">
+                <div class="digitalClock"></div><span>:</span>
+                <div class="digitalClock"></div><span>:</span>
+                <div class="digitalClock"></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
